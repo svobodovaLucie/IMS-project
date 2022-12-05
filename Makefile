@@ -16,7 +16,7 @@ all: $(EXEC)
 $(EXEC): 10_xsvobo1x.o
 	$(CC) $(CFLAGS) -o $@ $^ $(LFLAGS)
 
-10_xsvobo1x.o: 10_xsvobo1x.cpp 10_xsvobo1x.h
+10_xsvobo1x.o: 10_xsvobo1x.cpp
 	$(CC) $(CFLAGS) -c $< $(LFLAGS)
 
 run: 
